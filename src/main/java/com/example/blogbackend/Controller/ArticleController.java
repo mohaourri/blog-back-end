@@ -4,6 +4,7 @@ import com.example.blogbackend.Const.Consts;
 import com.example.blogbackend.Dto.ArticleRequestDTO;
 import com.example.blogbackend.Dto.ArticleResponseDTO;
 import com.example.blogbackend.Service.ArticleService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +20,7 @@ public class ArticleController {
 
     @PostMapping
     @PreAuthorize("hasRole('AUTHOR')")
-    public ArticleResponseDTO create(@RequestBody ArticleRequestDTO dto) {
+    public ArticleResponseDTO create( @Valid @RequestBody ArticleRequestDTO dto) {
         return articleService.createArticle(dto);
     }
 

@@ -27,6 +27,7 @@ public class UserController {
 
     @PutMapping("/profile/complete")
     public UserProfileResponseDTO completeProfile(
+            @Valid
             @AuthenticationPrincipal Jwt jwt,
             @Valid @RequestBody UserProfileRequestDTO dto
     ) {

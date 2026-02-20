@@ -22,6 +22,7 @@ public class CommentController {
     @PostMapping
     @PreAuthorize("hasRole('USER')")
     public CommentResponseDTO addComment(
+            @Valid
             @AuthenticationPrincipal Jwt jwt,
             @Valid @RequestBody CommentRequestDTO dto
     ) {
