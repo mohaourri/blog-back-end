@@ -3,6 +3,13 @@
 API REST sécurisée pour une application de blog, construite avec Spring Boot 4, Keycloak, et MySQL.
 
 ---
+<img width="1905" height="796" alt="{54FF176A-BF9D-430E-A097-97C9D5FCBDD0}" src="https://github.com/user-attachments/assets/0cdf9c79-f3ab-469f-a573-a6b7f5940fdb" />
+<img width="1911" height="915" alt="{6D5DC77C-399B-4F37-A56D-68D6237441BB}" src="https://github.com/user-attachments/assets/b7e374c0-cf77-4054-a5b2-dce2b9473789" />
+<img width="1919" height="904" alt="{AFA28C2D-EB7C-403E-A301-04B6A03F4255}" src="https://github.com/user-attachments/assets/93516fde-8d08-4076-99aa-0b1c7be8a579" />
+<img width="1914" height="910" alt="{9B42A232-63BC-4BAE-8A77-A1D77206F625}" src="https://github.com/user-attachments/assets/e99d5112-569a-4792-a537-a32f7d477a94" />
+<img width="1915" height="908" alt="{BF698601-4BB0-4A38-840C-931C31333A6E}" src="https://github.com/user-attachments/assets/773bfbce-21ed-4bf5-9b35-dadbaa2e8d83" />
+
+
 
 ## Stack technique
 
