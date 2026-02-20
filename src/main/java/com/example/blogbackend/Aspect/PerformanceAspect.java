@@ -16,7 +16,7 @@ public class PerformanceAspect {
     public Object measureExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
         long start = System.currentTimeMillis();
 
-        Object result = joinPoint.proceed(); // exécute la méthode réelle
+        Object result = joinPoint.proceed();
 
         long duration = System.currentTimeMillis() - start;
 

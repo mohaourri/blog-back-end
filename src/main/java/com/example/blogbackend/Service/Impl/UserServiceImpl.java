@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
-    private final UserMapper userMapper;     // ← MapStruct injecte l'impl automatiquement
+    private final UserMapper userMapper;
 
     @Override
     public UserProfileResponseDTO getMyProfile(Jwt jwt) {

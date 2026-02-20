@@ -14,7 +14,7 @@ import java.util.List;
 public class User extends TracableEntity {
 
     @Column(unique = true, nullable = false)
-    private String keycloakId;   // "sub" du JWT → clé de synchronisation
+    private String keycloakId;
 
     @Column(unique = true, nullable = false)
     private String username;
@@ -22,22 +22,22 @@ public class User extends TracableEntity {
     @Column(unique = true)
     private String email;
 
-    private String password;     // non utilisé avec Keycloak, gardé pour compatibilité
+    private String password;
 
-    private String firstName;    // given_name
+    private String firstName;
 
-    private String lastName;     // family_name
+    private String lastName;
 
-    private String bio;          // à compléter via l'endpoint /profile
+    private String bio;
 
-    private String avatarUrl;    // à compléter via l'endpoint /profile
+    private String avatarUrl;
 
     @Enumerated(EnumType.STRING)
     private Role role;
 
     @Column(nullable = false)
     @Builder.Default
-    private Boolean profileCompleted = false;  // false tant que /profile non rempli
+    private Boolean profileCompleted = false;
 
     @OneToMany(mappedBy = "author")
     private List<Article> articles;
